@@ -1,0 +1,26 @@
+{"metadata":{"#date+run":"2023-03-22T08:33:57.856305","#meta+reporting_orgs+num":6},"data":[
+ {
+   "#org+id+reporting": "do-1",
+   "#org+name+reporting": "Abbott Laboratories"
+ },
+ {
+   "#org+id+reporting": "do-2",
+   "#org+name+reporting": "Accenture plc"
+ },
+ {
+   "#org+id+reporting": "do-28",
+   "#org+name+reporting": "Halkbank"
+ },
+ {
+   "#org+id+reporting": "do-71",
+   "#org+name+reporting": "Turkish Enterprise and Business Confederation (TÜRKONFED)"
+ },
+ {
+   "#org+id+reporting": "do-80",
+   "#org+name+reporting": "VakıfBank"
+ },
+ {
+   "#org+id+reporting": "do-85",
+   "#org+name+reporting": "Ziraat Bank"
+ }
+]}

@@ -2,7 +2,7 @@
   <div class="iati-viz mb-4">
     <OchaHeader class="mb-4" />
     <b-container>
-      <a href="/viz-ukraine-ps-tracker/"><b-navbar-brand>
+      <a href="/viz-turkiye-ps-tracker/"><b-navbar-brand>
         <span v-html="pageTitle" />
       </b-navbar-brand></a>
       <b-navbar toggleable="lg" type="light" variant="bg-white" class="navbar-iati">
@@ -133,7 +133,7 @@ export default {
         isProd = !!(window.location.host.includes('ocha-dap')) || !!(window.location.host.includes('humdata'))
         this.$store.commit('setProd', isProd)
       }
-      return (isProd) ? 'Ukraine Private Sector Donations Tracker' : '*STAGE* Ukraine Private Sector Donations Tracker'
+      return (isProd) ? 'Türkiye Private Sector Donations Tracker' : '*STAGE* Türkiye Private Sector Donations Tracker'
     },
     query () {
       return this.$route.query

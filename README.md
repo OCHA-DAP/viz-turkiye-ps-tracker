@@ -1,6 +1,6 @@
-# Covid-19 visualization
+# Türkiye Private Sector Donations visualization
 
-A simple visualization using published IATI data on Covid-19.
+A simple visualization using published IATI data on Türkiye private sector donations.
 
 Data is generated nightly by the [OCHA-DAP/hdx-scraper-iati-viz](https://github.com/ocha-dap/hdx-scraper-iati-viz) repository.
 
@@ -38,18 +38,13 @@ You can manage linting rules in `.eslintrc.js`. I disabled a few rules but you m
 
 ## Overview
 
-There are three "tabs" in the visualization: Commmitments/Spending; Spending Flows; About. Each of these tabs is accessible from the top navigation bar. The navigation bar is found in `default.vue`.
+There are two "tabs" in the visualization: Commmitments/Spending; About. Each of these tabs is accessible from the top navigation bar. The navigation bar is found in `default.vue`.
 
 ### Commmitments/Spending (`pages/index.vue`)
 
 The Commmitments/Spending tab contains data from IATI, and displays **components** in the following order:
 * `Charts/DoughnutChart.vue`: a doughnut chart showing a side by side percentage breakdown of the top five categories by Commitments on the left and Spending on the right.
-* `Charts/TimeseriesChart.vue`: a combination bar and line chart that shows monthly and cumulative Commitments and Spending totals by month.
-
-### Spending Flows (`pages/spending_flows.vue`)
-
-The Spending Flows tab contains data from IATI and displays the financial flows by reporting organization
-* A Sankey chart (using the `Charts/FinancialSankey.vue` component) for the selected **organization**.
+* `Charts/FinancialSankey.vue`: a sankey chart that displays the financial flows by reporting organization.
 
 ### About (`pages/about.vue`)
 
