@@ -17,7 +17,7 @@ export default {
       { hid: 'description', name: 'description', content: 'This interactive dashboard from the OCHA/UNDP Connecting Business initiative showing pledged and paid donations from businesses around the world intended to respond to the humanitarian crisis in Türkiye.' },
       { name: 'twitter:card', content: 'summary' },
       { name: 'twitter:site', content: '@humdata' },
-      { name: 'twitter:title', content: 'Ukraine Private Sector Donations Tracker' },
+      { name: 'twitter:title', content: 'Türkiye Private Sector Donations Tracker' },
       { name: 'twitter:description', content: 'This interactive dashboard from the OCHA/UNDP Connecting Business initiative showing pledged and paid donations from businesses around the world intended to respond to the humanitarian crisis in Türkiye.' },
       { name: 'twitter:image', content: 'https://ocha-dap.github.io/viz-ukraine-ps-tracker/preview-img.png' },
       { name: 'twitter:image:alt', content: 'Private sector donations to the humanitarian crisis in Türkiye.' }
