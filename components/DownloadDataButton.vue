@@ -38,7 +38,7 @@ export default {
   },
   computed: {
     filePath () {
-      return 'https://data.humdata.org/dataset/ukraine-private-sector-donations-tracker'
+      return 'https://data.humdata.org/dataset/turkiye-syria-earthquake-private-sector-donations-tracker'
       // return 'https://ocha-dap.github.io/hdx-scraper-iati-viz/' + this.type + '.csv'
     },
     isProd () {

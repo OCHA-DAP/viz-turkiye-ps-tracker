@@ -7,7 +7,7 @@ export default ({ app }, inject) => {
       action,
       content,
       'current view': view,
-      'viz type': 'ukraine ps tracker dashboard'
+      'viz type': 'turkiye ps tracker dashboard'
     })
   })
 
