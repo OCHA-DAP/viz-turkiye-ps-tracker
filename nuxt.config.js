@@ -1,12 +1,15 @@
 const routerBase = process.env.DEPLOY_ENV === 'WITH_SUBFOLDER'
   ? {
       router: {
-        //base: '/viz-turkiye-ps-tracker'
         base: '.',
         mode: 'hash'
       }
     }
-  : {}
+  : {
+      router: {
+        mode: 'hash'
+      }
+    }
 export default {
   /*
   ** Headers of the page
