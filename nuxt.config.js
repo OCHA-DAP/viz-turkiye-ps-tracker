@@ -1,7 +1,9 @@
 const routerBase = process.env.DEPLOY_ENV === 'WITH_SUBFOLDER'
   ? {
       router: {
-        base: '/viz-turkiye-ps-tracker'
+        //base: '/viz-turkiye-ps-tracker'
+        base: '.',
+        mode: 'hash'
       }
     }
   : {}
@@ -90,6 +92,7 @@ export default {
     }]
   ],
   build: {
+    publicPath: process.env.DEPLOY_ENV === 'WITH_SUBFOLDER' ? './' : '/_nuxt/',
     /*
     ** You can extend webpack config here
     */
@@ -97,8 +100,11 @@ export default {
       config.externals = {
         moment: 'moment'
       }
+      config.output.publicPath = process.env.DEPLOY_ENV === 'WITH_SUBFOLDER' ? './' : config.output.publicPath
     }
   },
+  target: 'static',
+  ssr: process.env.DEPLOY_ENV !== 'WITH_SUBFOLDER',
   dev: process.env.NODE_ENV !== 'production',
   ...routerBase
 }

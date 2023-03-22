@@ -374,9 +374,8 @@ export default {
     this.filterParams['#org+id+reporting'] = '*'
     this.filterParams['#org+name+receiver'] = '*'
 
-    const filePath = (config.dev) ? '' : '/viz-turkiye-ps-tracker/'
-    const reportingDataPath = filePath + 'reporting_orgs.json'
-    const receiverDataPath = filePath + 'receiver_orgs.json'
+    const reportingDataPath = 'reporting_orgs.json'
+    const receiverDataPath = 'receiver_orgs.json'
     axios.all([axios.get(reportingDataPath), axios.get(receiverDataPath)])
       .then(axios.spread((...responses) => {
         const reportingData = responses[0]
@@ -419,8 +418,7 @@ export default {
   },
   methods: {
     async loadData () {
-      const filePath = (config.dev) ? '' : '/viz-turkiye-ps-tracker/'
-      await axios.get(filePath + 'tooltips.csv')
+      await axios.get('tooltips.csv')
         .then((response) => {
           return csvtojson().fromString(response.data).then((jsonData) => {
             this.$store.commit('setTooltips', jsonData)
@@ -428,7 +426,7 @@ export default {
         })
 
       // get transaction data
-      await axios.get(filePath + 'transactions.json')
+      await axios.get('transactions.json')
         .then((response) => {
           // process the metadata
           const metadata = response.data.metadata
@@ -442,7 +440,7 @@ export default {
         })
 
       // get flows data
-      await axios.get(filePath + 'flows.json')
+      await axios.get('flows.json')
         .then((response) => {
           this.fullFlowsData = response.data.data
           this.updateFilteredFlowsData()

@@ -2,22 +2,32 @@
   <div class="iati-viz mb-4">
     <OchaHeader class="mb-4" />
     <b-container>
-      <a href="/viz-turkiye-ps-tracker/"><b-navbar-brand>
+      <a href="./#/" class="navbar-brand" target="_self">
         <span v-html="pageTitle" />
-      </b-navbar-brand></a>
+      </a>
       <b-navbar toggleable="lg" type="light" variant="bg-white" class="navbar-iati">
         <b-navbar-toggle target="nav-collapse" />
 
         <b-collapse id="nav-collapse" is-nav>
           <b-navbar-nav>
-            <b-nav-item :to="{ name: 'index'}" exact-active-class="active" class="nav-index" no-prefetch @click="onClick('Dashboard')">
+            <!-- <b-nav-item :to="{ name: 'index'}" exact-active-class="active" class="nav-index" no-prefetch @click="onClick('Dashboard')">
               Dashboard
-            </b-nav-item>
+            </b-nav-item> -->
+            <li class="nav-item">
+              <a href="./#/" class="nav-link" target="_self" :class="{'active': isRouteActive('/') }" @click="onClick('Dashboard')">
+                Dashboard
+              </a>
+            </li>
           </b-navbar-nav>
           <b-navbar-nav class="ml-auto">
-            <b-nav-item :to="{name: 'about'}" active-class="active" class="ml-lg-auto nav-about" no-prefetch @click="onClick('About this Dashboard')">
+            <!-- <b-nav-item :to="{name: 'about'}" active-class="active" class="ml-lg-auto nav-about" no-prefetch @click="onClick('About this Dashboard')">
               About this Dashboard
-            </b-nav-item>
+            </b-nav-item> -->
+            <li class="nav-item ml-lg-auto">
+              <a href="./#/about" class="nav-link" :class="{'active': isRouteActive('/about') }" target="_self">
+                About this Dashboard
+              </a>
+            </li>
           </b-navbar-nav>
         </b-collapse>
       </b-navbar>
@@ -148,6 +158,9 @@ export default {
     onClick (page) {
       // console.log(this.$route.query)
       this.$mixpanelTrackAction('switch viz', config.head.title, page)
+    },
+    isRouteActive (name) {
+      return this.$route.path === name
     }
   }
 }
