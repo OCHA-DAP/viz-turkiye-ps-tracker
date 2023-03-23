@@ -15,17 +15,17 @@ export default {
   ** Headers of the page
   */
   head: {
-    title: 'Türkiye Private Sector Donations Tracker',
+    title: 'Türkiye-Syria Earthquakes Private Sector Donations Tracker',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'This interactive dashboard from the OCHA/UNDP Connecting Business initiative showing pledged and paid donations from businesses around the world intended to respond to the humanitarian crisis in Türkiye.' },
+      { hid: 'description', name: 'description', content: 'This interactive dashboard from the OCHA/UNDP Connecting Business initiative showing pledged and paid donations from businesses around the world intended to respond to the humanitarian crisis in Türkiye and Syria.' },
       { name: 'twitter:card', content: 'summary' },
       { name: 'twitter:site', content: '@humdata' },
-      { name: 'twitter:title', content: 'Türkiye Private Sector Donations Tracker' },
-      { name: 'twitter:description', content: 'This interactive dashboard from the OCHA/UNDP Connecting Business initiative showing pledged and paid donations from businesses around the world intended to respond to the humanitarian crisis in Türkiye.' },
+      { name: 'twitter:title', content: 'Türkiye-Syria Earthquakes Private Sector Donations Tracker' },
+      { name: 'twitter:description', content: 'This interactive dashboard from the OCHA/UNDP Connecting Business initiative showing pledged and paid donations from businesses around the world intended to respond to the humanitarian crisis in Türkiye and Syria.' },
       { name: 'twitter:image', content: 'https://ocha-dap.github.io/viz-ukraine-ps-tracker/preview-img.png' },
-      { name: 'twitter:image:alt', content: 'Private sector donations to the humanitarian crisis in Türkiye.' }
+      { name: 'twitter:image:alt', content: 'Private sector donations to the humanitarian crisis in Türkiye and Syria.' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: 'https://data.humdata.org/images/icons/hdx.ico' },

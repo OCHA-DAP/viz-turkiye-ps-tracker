@@ -143,7 +143,7 @@ export default {
         isProd = !!(window.location.host.includes('ocha-dap')) || !!(window.location.host.includes('humdata'))
         this.$store.commit('setProd', isProd)
       }
-      return (isProd) ? 'Türkiye Private Sector Donations Tracker' : '*STAGE* Türkiye Private Sector Donations Tracker'
+      return (isProd) ? 'Türkiye-Syria Earthquakes Private Sector Donations Tracker' : '*STAGE* Türkiye-Syria Earthquakes Private Sector Donations Tracker'
     },
     query () {
       return this.$route.query

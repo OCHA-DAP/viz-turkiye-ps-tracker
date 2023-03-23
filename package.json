@@ -1,7 +1,7 @@
 {
   "name": "turkiye-ps-tracker-visualisation",
   "version": "1.0.0",
-  "description": "A simple visualisation of Türkiye Private Sector Donations.",
+  "description": "A simple visualisation of Türkiye-Syria Earthquakes Private Sector Donations.",
   "author": "Centre for Humanitarian Data",
   "private": true,
   "scripts": {

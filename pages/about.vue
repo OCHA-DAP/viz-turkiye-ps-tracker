@@ -30,17 +30,9 @@
           <section class="mb-5">
             <h2>About this Dashboard</h2>
 
-            <p>The response of the global business community to the ongoing humanitarian emergency in Ukraine has been unprecedented.</p>
-
-            <p>This dashboard was created to make it easier to visualize, explore, and understand the scope and scale of private sector donations being made for the benefit of affected people. In doing so, we hope to shine a light on the generosity of local and global businesses while also bringing more transparency and accountability to the sources and uses of funds being allocated to support the millions of people who have been affected by the war.</p>
-
-            <!--             <p>For the purposes of this dashboard, “private sector” is defined as corporations and corporate-linked foundations, including individual and family foundations associated with prominent business leaders. The dashboard does not include contributions from individuals.</p>
-
-            <p>This dashboard was built by the <a href="https://centre.humdata.org" target="_blank">OCHA Centre for Humanitarian Data</a> based on data collected and maintained by the <a href="https://www.connectingbusiness.org" target="_blank">OCHA/UNDP Connecting Business initiative (CBi)</a>. The CBi team has made every effort possible to ensure the accuracy of the data presented, and we are committed to updating the <a href="https://data.humdata.org/dataset/ukraine-private-sector-donations-tracker" target="_blank">underlying data</a> on a weekly basis through 30 September 2022.</p>
-
-            <p>Data is sourced from individual United Nations agencies, funds, and programmes; the OCHA-managed <a href="https://www.unocha.org/ukraine/about-uhf" target="_blank">Ukraine Humanitarian Fund</a>; the OCHA <a href="https://fts.unocha.org" target="_blank">Financial Tracking Service</a>; the <a href="https://unfoundation.org" target="_blank">United Nations Foundation</a>; public reporting; and academic/non-profit sources including <a href="https://candid.org" target="_blank">Candid</a>, the <a href="https://www.uschamberfoundation.org" target="_blank">U.S. Chamber of Commerce Foundation</a>, and the <a href="https://ccc.bc.edu/content/ccc.html" target="_blank">Boston College Centre for Corporate Citizenship</a>.</p>
-
-            <p>This dashboard is made possible by the support of the American People through the <a href="https://www.usaid.gov/who-we-are/organization/bureaus/bureau-humanitarian-assistance" target="_blank">United States Agency for International Development (USAID) Bureau for Humanitarian Assistance</a>.</p> -->
+            <p>The devastating earthquakes that struck Türkiye in February 2023 brought about a wave of solidarity from local and global businesses. In the aftermath of the disaster, the private sector stepped forward to offer support and contribute toward the Government-led relief efforts.</p>
+            <p>This dashboard was created to highlight the scale and impact of corporate contributions toward the earthquake response. In doing so, we hope to shine a light on the generosity of local and global businesses while also bringing more transparency and accountability to the sources and uses of donations in support of the millions of people who have been affected by the earthquakes.</p>
+            <p><b>Please note that the frequently asked questions section is being updated.</b></p>
           </section>
 
           <section class="mb-5">
@@ -52,7 +44,7 @@
               <b-card no-body>
                 <b-card-header header-tag="header" role="tab">
                   <b-button v-b-toggle.accordion-1 block squared>
-                    Who created the Ukraine Private Sector Donations Tracker?
+                    Who created this dashboard?
                   </b-button>
                 </b-card-header>
                 <b-collapse id="accordion-1" accordion="faq-accordion" role="tabpanel">
