@@ -374,8 +374,8 @@ export default {
     this.filterParams['#org+id+reporting'] = '*'
     this.filterParams['#org+name+receiver'] = '*'
 
-    const reportingDataPath = 'reporting_orgs.json'
-    const receiverDataPath = 'receiver_orgs.json'
+    const reportingDataPath = 'https://raw.githubusercontent.com/OCHA-DAP/hdx-scraper-cbi-viz/gh-pages/turkiye/reporting_orgs.json'
+    const receiverDataPath = 'https://raw.githubusercontent.com/OCHA-DAP/hdx-scraper-cbi-viz/gh-pages/turkiye/receiver_orgs.json'
     axios.all([axios.get(reportingDataPath), axios.get(receiverDataPath)])
       .then(axios.spread((...responses) => {
         const reportingData = responses[0]
@@ -426,7 +426,7 @@ export default {
         })
 
       // get transaction data
-      await axios.get('transactions.json')
+      await axios.get('https://raw.githubusercontent.com/OCHA-DAP/hdx-scraper-cbi-viz/gh-pages/turkiye/transactions.json')
         .then((response) => {
           // process the metadata
           const metadata = response.data.metadata
@@ -440,7 +440,7 @@ export default {
         })
 
       // get flows data
-      await axios.get('flows.json')
+      await axios.get('https://raw.githubusercontent.com/OCHA-DAP/hdx-scraper-cbi-viz/gh-pages/turkiye/flows.json')
         .then((response) => {
           this.fullFlowsData = response.data.data
           this.updateFilteredFlowsData()
